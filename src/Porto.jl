@@ -1,5 +1,12 @@
 module Porto
 
-# Write your package code here.
+using Dates
+using DataFrames
+using YFinance
 
-end
+
+include("data_connections/connection.jl")
+
+export Yahoo, DataSource, prices
+
+end # end of Porto Module

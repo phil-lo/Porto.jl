@@ -3,6 +3,12 @@ uuid = "0b7d46d5-26d9-49f7-aa47-c131620d10e6"
 authors = ["Philippe Lacroix-Ouellette"]
 version = "0.1.0"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+TimeSeries = "9e3dc215-6440-5c97-bce1-76c03772f85e"
+YFinance = "e4b3b0a2-f9a3-42f3-aabb-32142cceaf77"
+
 [compat]
 julia = "1"
 
