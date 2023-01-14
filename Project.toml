@@ -1,0 +1,13 @@
+name = "Porto"
+uuid = "0b7d46d5-26d9-49f7-aa47-c131620d10e6"
+authors = ["Philippe Lacroix-Ouellette"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
