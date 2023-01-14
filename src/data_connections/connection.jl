@@ -14,9 +14,10 @@ end
 
 
 """
-prices(conn::Type{Yahoo}, ticker::AbstractString; start_dt::Date, end_dt::Date, interval::AbstractString="1d")::DataFrame
-prices(conn::Type{Yahoo}, ticker::AbstractString; interval::AbstractString="1d")::DataFrame
-prices(conn::Type{Yahoo}, tickers::Vector{String}; interval::AbstractString="1d")::DataFrame
+prices(conn::Type{Yahoo}, ticker::AbstractString, start_dt::Date, end_dt::Date; interval::AbstractString="1d")::DataFrame
+prices(conn::Type{Yahoo}, ticker::AbstractString; interval::AbstractString="1d", range::AbstractString="max")::DataFrame
+prices(conn::Type{Yahoo}, tickers::Vector{String}, start_dt::Date, end_dt::Date; interval::AbstractString="1d")::DataFrame
+prices(conn::Type{Yahoo}, tickers::Vector{String}; interval::AbstractString="1d", range::AbstractString="max")::DataFrame
 
 Fetches prices from Yahoo Finance API
 """
