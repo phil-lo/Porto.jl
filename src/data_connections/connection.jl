@@ -8,17 +8,13 @@ A Data Connection provides access to its respective API methods to retreive data
 """
 abstract type DataSource end
 
-abstract type Yahoo <: DataSource 
-    # Yahoo API Connection
-end
+"""
+Yahoo Finance data source
+"""
+abstract type Yahoo <: DataSource end
 
 
 """
-prices(conn::Type{Yahoo}, ticker::AbstractString, start_dt::Date, end_dt::Date; interval::AbstractString="1d")::DataFrame
-prices(conn::Type{Yahoo}, ticker::AbstractString; interval::AbstractString="1d", range::AbstractString="max")::DataFrame
-prices(conn::Type{Yahoo}, tickers::Vector{String}, start_dt::Date, end_dt::Date; interval::AbstractString="1d")::DataFrame
-prices(conn::Type{Yahoo}, tickers::Vector{String}; interval::AbstractString="1d", range::AbstractString="max")::DataFrame
-
 Fetches prices from Yahoo Finance API
 """
 function prices(conn::Type{Yahoo}, ticker::AbstractString, start_dt::Date, end_dt::Date; interval::AbstractString="1d")::DataFrame
